@@ -1,0 +1,388 @@
+\section{\-Piece \-Class \-Reference}
+\label{class_piece}\index{\-Piece@{\-Piece}}
+
+
+{\ttfamily \#include $<$\-Piece.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Piece\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Piece} (irr\-::video\-::\-I\-Video\-Driver $\ast${\bf driver}, unsigned int adv)
+\item 
+virtual {\bf $\sim$\-Piece} ()
+\item 
+void {\bf affichage} (irr\-::video\-::\-I\-Video\-Driver $\ast${\bf driver})
+\item 
+std\-::string {\bf get\-Info} ()
+\item 
+char {\bf get\-Type\-Piece} ()
+\item 
+unsigned int {\bf get\-Adv} ()
+\item 
+virtual bool {\bf check\-Pos} ({\bf \-Coord} \&pos\-Dep, {\bf \-Coord} \&pos\-Arr, unsigned int tab[8][8])
+\item 
+irr\-::video\-::\-I\-Texture $\ast$ {\bf get\-Texture} ()
+\item 
+void {\bf set\-Pos\-Res} ({\bf \-Coord} \&pos)
+\item 
+{\bf \-Coord} \& {\bf get\-Pos\-Res} ()
+\item 
+{\bf \-Coord} \& {\bf get\-Irrlicht\-Pos} ()
+\item 
+void {\bf set\-Irrlicht\-Pos} ({\bf \-Coord} \&pos)
+\item 
+void {\bf set\-Irrlicht\-Pos\-Res} (int pos\-X, unsigned int adv)
+\item 
+void {\bf set\-Standard\-Color} ()
+\item 
+void {\bf set\-Selected\-Color} ()
+\item 
+void {\bf set\-Echec\-Color} ()
+\item 
+void {\bf set\-Echec\-Mat\-Color} ()
+\item 
+virtual bool {\bf get\-First\-Move} ()
+\item 
+virtual void {\bf set\-First\-Move} (bool first)
+\item 
+virtual bool {\bf get\-Pos\-Init} ()
+\item 
+virtual void {\bf set\-Pos\-Init} (bool init)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char {\bf m\-\_\-type}
+\item 
+unsigned int {\bf m\-\_\-adv}
+\item 
+irr\-::video\-::\-I\-Texture $\ast$ {\bf m\-\_\-texture}
+\item 
+irr\-::core\-::rect$<$ irr\-::s32 $>$ {\bf m\-\_\-texture\-\_\-rect}
+\item 
+irr\-::video\-::\-I\-Video\-Driver $\ast$ {\bf driver}
+\item 
+irr\-::video\-::\-S\-Color {\bf m\-\_\-couleur\-\_\-piece}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Piece@{\-Piece}!\-Piece@{\-Piece}}
+\index{\-Piece@{\-Piece}!Piece@{\-Piece}}
+\subsubsection[{\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Piece\-::\-Piece} (
+\begin{DoxyParamCaption}
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver, }
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_piece_ad59f82eb184e7fa2e212806ac38d6b6f}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_piece_ad59f82eb184e7fa2e212806ac38d6b6f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!$\sim$\-Piece@{$\sim$\-Piece}}
+\index{$\sim$\-Piece@{$\sim$\-Piece}!Piece@{\-Piece}}
+\subsubsection[{$\sim$\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Piece\-::$\sim$\-Piece} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_piece_a5d7a4f6bade94cb33b6f634de8aa7918}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Piece@{\-Piece}!affichage@{affichage}}
+\index{affichage@{affichage}!Piece@{\-Piece}}
+\subsubsection[{affichage}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::affichage} (
+\begin{DoxyParamCaption}
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_piece_a301b1ea85c19376e0950aa45584a9b16}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_piece_a301b1ea85c19376e0950aa45584a9b16_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!check\-Pos@{check\-Pos}}
+\index{check\-Pos@{check\-Pos}!Piece@{\-Piece}}
+\subsubsection[{check\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Piece\-::check\-Pos} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos\-Dep, }
+\item[{{\bf \-Coord} \&}]{pos\-Arr, }
+\item[{unsigned int}]{tab[8][8]}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_piece_a01a8e9e7f572f8a460bbc8d9fa629796}
+
+
+\-Reimplemented in {\bf \-Roi} \doxyref{}{p.}{class_roi_a0bc5fdfa40aa19aa13141953c66582e5}, {\bf \-Dame} \doxyref{}{p.}{class_dame_a06ac9f19c918587826e80bd87e5aa8c1}, {\bf \-Tour} \doxyref{}{p.}{class_tour_aa89429fc1f76ea0ffb78a82d1656a902}, {\bf \-Fou} \doxyref{}{p.}{class_fou_a9cde8172769db0b3ec0fe2609952bc47}, {\bf \-Cavalier} \doxyref{}{p.}{class_cavalier_a1d3c390c5a7a42efaf9f1df7a1f86d6b}, and {\bf \-Pion} \doxyref{}{p.}{class_pion_acb49d5f8271cc107620de020d0837c56}.
+
+\index{\-Piece@{\-Piece}!get\-Adv@{get\-Adv}}
+\index{get\-Adv@{get\-Adv}!Piece@{\-Piece}}
+\subsubsection[{get\-Adv}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Piece\-::get\-Adv} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a2610f69a0ef12680dd4dd95d66e0f9ab}
+\index{\-Piece@{\-Piece}!get\-First\-Move@{get\-First\-Move}}
+\index{get\-First\-Move@{get\-First\-Move}!Piece@{\-Piece}}
+\subsubsection[{get\-First\-Move}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Piece\-::get\-First\-Move} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_piece_a8ed8ec70e013cdea5fcb2fda6b50f715}
+
+
+\-Reimplemented in {\bf \-Pion} \doxyref{}{p.}{class_pion_af48311c6bedffbd63799e7ebe4db69f1}.
+
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece_a8ed8ec70e013cdea5fcb2fda6b50f715_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!get\-Info@{get\-Info}}
+\index{get\-Info@{get\-Info}!Piece@{\-Piece}}
+\subsubsection[{get\-Info}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Piece\-::get\-Info} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a8b47e9e20d495ca6a307a8c1d4426a36}
+\index{\-Piece@{\-Piece}!get\-Irrlicht\-Pos@{get\-Irrlicht\-Pos}}
+\index{get\-Irrlicht\-Pos@{get\-Irrlicht\-Pos}!Piece@{\-Piece}}
+\subsubsection[{get\-Irrlicht\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Coord} \& {\bf \-Piece\-::get\-Irrlicht\-Pos} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a268e96d9cd4aab598a912873db91b7b7}
+\index{\-Piece@{\-Piece}!get\-Pos\-Init@{get\-Pos\-Init}}
+\index{get\-Pos\-Init@{get\-Pos\-Init}!Piece@{\-Piece}}
+\subsubsection[{get\-Pos\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Piece\-::get\-Pos\-Init} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_piece_aed4cb448abb30bf90bce18205245d0f3}
+
+
+\-Reimplemented in {\bf \-Roi} \doxyref{}{p.}{class_roi_afb9ad926625c8fc4558661f8a042fade}, and {\bf \-Tour} \doxyref{}{p.}{class_tour_a8979522dd2ec1fc5df302682c6cd7414}.
+
+\index{\-Piece@{\-Piece}!get\-Pos\-Res@{get\-Pos\-Res}}
+\index{get\-Pos\-Res@{get\-Pos\-Res}!Piece@{\-Piece}}
+\subsubsection[{get\-Pos\-Res}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Coord} \& {\bf \-Piece\-::get\-Pos\-Res} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_add35d65e291c434c6a4773f0304d5d6d}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece_add35d65e291c434c6a4773f0304d5d6d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!get\-Texture@{get\-Texture}}
+\index{get\-Texture@{get\-Texture}!Piece@{\-Piece}}
+\subsubsection[{get\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}irr\-::video\-::\-I\-Texture $\ast$ {\bf \-Piece\-::get\-Texture} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a351633dd359555f98a3400aeb5f66931}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_piece_a351633dd359555f98a3400aeb5f66931_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!get\-Type\-Piece@{get\-Type\-Piece}}
+\index{get\-Type\-Piece@{get\-Type\-Piece}!Piece@{\-Piece}}
+\subsubsection[{get\-Type\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Piece\-::get\-Type\-Piece} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a8c7cbef0deaeeb43ddea2f72eae188b5}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece_a8c7cbef0deaeeb43ddea2f72eae188b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!set\-Echec\-Color@{set\-Echec\-Color}}
+\index{set\-Echec\-Color@{set\-Echec\-Color}!Piece@{\-Piece}}
+\subsubsection[{set\-Echec\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Echec\-Color} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_aec3d5ad4e08b23d5c6edefe8b34fab0f}
+\index{\-Piece@{\-Piece}!set\-Echec\-Mat\-Color@{set\-Echec\-Mat\-Color}}
+\index{set\-Echec\-Mat\-Color@{set\-Echec\-Mat\-Color}!Piece@{\-Piece}}
+\subsubsection[{set\-Echec\-Mat\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Echec\-Mat\-Color} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a01ef72b0490f5130b6a1cc2bffcd1cee}
+\index{\-Piece@{\-Piece}!set\-First\-Move@{set\-First\-Move}}
+\index{set\-First\-Move@{set\-First\-Move}!Piece@{\-Piece}}
+\subsubsection[{set\-First\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-First\-Move} (
+\begin{DoxyParamCaption}
+\item[{bool}]{first}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_piece_a5f8af913717885eb65fe8b98e2c094da}
+
+
+\-Reimplemented in {\bf \-Pion} \doxyref{}{p.}{class_pion_adbd2c653dddfb1e0079461f38ed53a25}.
+
+\index{\-Piece@{\-Piece}!set\-Irrlicht\-Pos@{set\-Irrlicht\-Pos}}
+\index{set\-Irrlicht\-Pos@{set\-Irrlicht\-Pos}!Piece@{\-Piece}}
+\subsubsection[{set\-Irrlicht\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Irrlicht\-Pos} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_piece_a4e76c9d4b84a7b55796ad0c66a061361}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece_a4e76c9d4b84a7b55796ad0c66a061361_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!set\-Irrlicht\-Pos\-Res@{set\-Irrlicht\-Pos\-Res}}
+\index{set\-Irrlicht\-Pos\-Res@{set\-Irrlicht\-Pos\-Res}!Piece@{\-Piece}}
+\subsubsection[{set\-Irrlicht\-Pos\-Res}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Irrlicht\-Pos\-Res} (
+\begin{DoxyParamCaption}
+\item[{int}]{pos\-X, }
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_piece_ac7a4b2e8a0d363101fd3d33fe00115e3}
+\index{\-Piece@{\-Piece}!set\-Pos\-Init@{set\-Pos\-Init}}
+\index{set\-Pos\-Init@{set\-Pos\-Init}!Piece@{\-Piece}}
+\subsubsection[{set\-Pos\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Pos\-Init} (
+\begin{DoxyParamCaption}
+\item[{bool}]{init}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_piece_a5bc98077c5c5c655f32baecd075c2baa}
+
+
+\-Reimplemented in {\bf \-Roi} \doxyref{}{p.}{class_roi_a35e9c97274c7547b13797ea09aed0222}, and {\bf \-Tour} \doxyref{}{p.}{class_tour_a6b04637814b18399d1b0223695b6e017}.
+
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece_a5bc98077c5c5c655f32baecd075c2baa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Piece@{\-Piece}!set\-Pos\-Res@{set\-Pos\-Res}}
+\index{set\-Pos\-Res@{set\-Pos\-Res}!Piece@{\-Piece}}
+\subsubsection[{set\-Pos\-Res}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Pos\-Res} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_piece_ab56539925c47a038a0869a97a736dd30}
+\index{\-Piece@{\-Piece}!set\-Selected\-Color@{set\-Selected\-Color}}
+\index{set\-Selected\-Color@{set\-Selected\-Color}!Piece@{\-Piece}}
+\subsubsection[{set\-Selected\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Selected\-Color} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a1196c01dbee2ce39cd397cf463de220d}
+\index{\-Piece@{\-Piece}!set\-Standard\-Color@{set\-Standard\-Color}}
+\index{set\-Standard\-Color@{set\-Standard\-Color}!Piece@{\-Piece}}
+\subsubsection[{set\-Standard\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Standard\-Color} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_piece_a063cceca578faa872a4bc0e18f181889}
+
+
+\-Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_piece_a063cceca578faa872a4bc0e18f181889_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\index{\-Piece@{\-Piece}!driver@{driver}}
+\index{driver@{driver}!Piece@{\-Piece}}
+\subsubsection[{driver}]{\setlength{\rightskip}{0pt plus 5cm}irr\-::video\-::\-I\-Video\-Driver$\ast$ {\bf \-Piece\-::driver}\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_piece_a532c88b2e55b44e180d5e293e55a8f16}
+\index{\-Piece@{\-Piece}!m\-\_\-adv@{m\-\_\-adv}}
+\index{m\-\_\-adv@{m\-\_\-adv}!Piece@{\-Piece}}
+\subsubsection[{m\-\_\-adv}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Piece\-::m\-\_\-adv}\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_piece_ab887b01825b67e4baad31d5928b1f01b}
+\index{\-Piece@{\-Piece}!m\-\_\-couleur\-\_\-piece@{m\-\_\-couleur\-\_\-piece}}
+\index{m\-\_\-couleur\-\_\-piece@{m\-\_\-couleur\-\_\-piece}!Piece@{\-Piece}}
+\subsubsection[{m\-\_\-couleur\-\_\-piece}]{\setlength{\rightskip}{0pt plus 5cm}irr\-::video\-::\-S\-Color {\bf \-Piece\-::m\-\_\-couleur\-\_\-piece}\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_piece_a2a4cad28a54d966c1eb1029b234b9016}
+\index{\-Piece@{\-Piece}!m\-\_\-texture@{m\-\_\-texture}}
+\index{m\-\_\-texture@{m\-\_\-texture}!Piece@{\-Piece}}
+\subsubsection[{m\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}irr\-::video\-::\-I\-Texture$\ast$ {\bf \-Piece\-::m\-\_\-texture}\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_piece_a4a311fe42d5f797f4e405f61d151a4dd}
+\index{\-Piece@{\-Piece}!m\-\_\-texture\-\_\-rect@{m\-\_\-texture\-\_\-rect}}
+\index{m\-\_\-texture\-\_\-rect@{m\-\_\-texture\-\_\-rect}!Piece@{\-Piece}}
+\subsubsection[{m\-\_\-texture\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}irr\-::core\-::rect$<$irr\-::s32$>$ {\bf \-Piece\-::m\-\_\-texture\-\_\-rect}\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_piece_a59653488f0adc5c05a0a294dbb5b23fa}
+\index{\-Piece@{\-Piece}!m\-\_\-type@{m\-\_\-type}}
+\index{m\-\_\-type@{m\-\_\-type}!Piece@{\-Piece}}
+\subsubsection[{m\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Piece\-::m\-\_\-type}\hspace{0.3cm}{\ttfamily  [protected]}}\label{class_piece_aa1acd75fb283ee9f87b5079bdd22d358}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf \-Piece.\-h}\item 
+{\bf \-Piece.\-cpp}\end{DoxyCompactItemize}

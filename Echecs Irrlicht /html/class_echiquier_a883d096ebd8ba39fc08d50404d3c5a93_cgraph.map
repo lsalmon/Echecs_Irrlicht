@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_piece.html#add35d65e291c434c6a4773f0304d5d6d" title="Piece::getPosRes" alt="" coords="227,5,376,38"/>
+<area shape="rect" id="node5" href="$class_piece.html#a8c7cbef0deaeeb43ddea2f72eae188b5" title="Piece::getTypePiece" alt="" coords="216,61,387,94"/>
+<area shape="rect" id="node7" href="$class_piece.html#a8ed8ec70e013cdea5fcb2fda6b50f715" title="Piece::getFirstMove" alt="" coords="220,117,383,150"/>
+</map>

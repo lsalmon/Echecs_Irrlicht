@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_piece.html" title="{Piece\n|# m_type\l# m_adv\l# m_texture\l# m_texture_rect\l# driver\l# m_couleur_piece\l|+ Piece()\l+ ~Piece()\l+ affichage()\l+ getInfo()\l+ getTypePiece()\l+ getAdv()\l+ checkPos()\l+ getTexture()\l+ setPosRes()\l+ getPosRes()\land 10 more...}" alt="" coords="5,6,163,423"/>
+</map>

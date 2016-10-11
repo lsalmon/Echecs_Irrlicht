@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Echecs Irrlicht" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Echecs Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../Irrlicht/irrlicht-1.8.1/lib/Linux/libIrrlicht.a" />
+					<Add directory="../Irrlicht/irrlicht-1.8.1/include" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Echecs Irrlicht" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../Irrlicht/irrlicht-1.8.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="/home/e1010057/Bureau/Irrlicht/irrlicht-1.8.1/lib/Linux/libIrrlicht.a" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xext" />
+			<Add library="Xrandr" />
+			<Add library="X11" />
+		</Linker>
+		<Unit filename="ContextManager.cpp" />
+		<Unit filename="ContextManager.h" />
+		<Unit filename="Echiquier.cpp" />
+		<Unit filename="Echiquier.h" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.h" />
+		<Unit filename="def.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="utils.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

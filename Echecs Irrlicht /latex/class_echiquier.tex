@@ -1,0 +1,396 @@
+\section{\-Echiquier \-Class \-Reference}
+\label{class_echiquier}\index{\-Echiquier@{\-Echiquier}}
+
+
+{\ttfamily \#include $<$\-Echiquier.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Echiquier} ()
+\item 
+void {\bf init} (irr\-::video\-::\-I\-Video\-Driver $\ast$driver)
+\item 
+void {\bf affiche\-Res} (irr\-::video\-::\-I\-Video\-Driver $\ast$driver)
+\item 
+void {\bf afficher} (irr\-::video\-::\-I\-Video\-Driver $\ast$driver)
+\item 
+void {\bf affiche\-Ech} (irr\-::video\-::\-I\-Video\-Driver $\ast$driver)
+\item 
+void {\bf set\-Selected\-Piece} ({\bf \-Coord} \&pos)
+\item 
+void {\bf set\-Standard\-Piece} ({\bf \-Coord} \&pos)
+\item 
+std\-::string {\bf get\-Pos\-Ech} ({\bf \-Coord} \&p)
+\item 
+void {\bf suppr\-Piece} ({\bf \-Coord} \&p)
+\item 
+bool {\bf rev\-Piece} (unsigned int adv, {\bf \-Coord} \&pos\-Prec, {\bf \-Coord} \&pos\-Act)
+\item 
+void {\bf upgrade\-Pion} (char type, irr\-::video\-::\-I\-Video\-Driver $\ast$driver)
+\item 
+irr\-::video\-::\-I\-Texture $\ast$ {\bf get\-Texture} ()
+\item 
+bool {\bf check\-Depl} ({\bf \-Coord} \&dep, {\bf \-Coord} \&arr)
+\item 
+bool {\bf check\-Promotion} ({\bf \-Coord} \&pos\-Arr)
+\item 
+bool {\bf check\-Roque} ({\bf \-Coord} \&dep, {\bf \-Coord} \&arr, unsigned int \&x\-Tour)
+\item 
+bool {\bf check\-Echec} ({\bf \-Coord} \&pos)
+\item 
+bool {\bf check\-Echec\-Mvt} (unsigned int adv)
+\item 
+void {\bf verifier\-Echec} (unsigned int adv)
+\item 
+int {\bf check\-Sortie\-Echec} ({\bf \-Coord} \&dep, {\bf \-Coord} \&arr, unsigned int joueur)
+\item 
+int {\bf check\-Echec\-Adv} (unsigned int adv)
+\item 
+bool {\bf lock} ({\bf \-Coord} \&dep, {\bf \-Coord} \&arr, unsigned int adv)
+\item 
+bool {\bf depl\-Piece} ({\bf \-Coord} \&dep, {\bf \-Coord} \&arr, unsigned int adv)
+\item 
+void {\bf charger\-Partie} (std\-::string path, irr\-::video\-::\-I\-Video\-Driver $\ast$driver)
+\item 
+void {\bf sauver\-Partie} (std\-::string file)
+\item 
+bool {\bf get\-Promotion\-Pion} ()
+\item 
+bool {\bf raz\-Promotion\-Pion} ()
+\item 
+void {\bf raz\-Promoted\-Pion} ()
+\item 
+unsigned int {\bf get\-Size\-Res} (unsigned int joueur)
+\item 
+bool {\bf get\-Echec\-Mat} ()
+\item 
+std\-::string {\bf get\-Echec\-Mat\-Txt} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Echiquier@{\-Echiquier}!\-Echiquier@{\-Echiquier}}
+\index{\-Echiquier@{\-Echiquier}!Echiquier@{\-Echiquier}}
+\subsubsection[{\-Echiquier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Echiquier\-::\-Echiquier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a0aab8ba63f69aa9425d4e4a9c5cc578a}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Echiquier@{\-Echiquier}!affiche\-Ech@{affiche\-Ech}}
+\index{affiche\-Ech@{affiche\-Ech}!Echiquier@{\-Echiquier}}
+\subsubsection[{affiche\-Ech}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::affiche\-Ech} (
+\begin{DoxyParamCaption}
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_aee87cb0312adaca55c5618236907daa1}
+\index{\-Echiquier@{\-Echiquier}!afficher@{afficher}}
+\index{afficher@{afficher}!Echiquier@{\-Echiquier}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a26ae2206b541c0d5ad7a41823d17fcc7}
+\index{\-Echiquier@{\-Echiquier}!affiche\-Res@{affiche\-Res}}
+\index{affiche\-Res@{affiche\-Res}!Echiquier@{\-Echiquier}}
+\subsubsection[{affiche\-Res}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::affiche\-Res} (
+\begin{DoxyParamCaption}
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a21f641cfa3cc4670b4103c571e4037b9}
+\-Parcours des \-Réserves et positionnement graphique des pièces qui sont a l'intérieur (set\-Irrlicht\-Pos\-Res), puis appel a la fonction d'affichage des pièces \index{\-Echiquier@{\-Echiquier}!charger\-Partie@{charger\-Partie}}
+\index{charger\-Partie@{charger\-Partie}!Echiquier@{\-Echiquier}}
+\subsubsection[{charger\-Partie}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::charger\-Partie} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{path, }
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a7ba5217e14837387f29f8ddd14073c62}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echiquier_a7ba5217e14837387f29f8ddd14073c62_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Echiquier@{\-Echiquier}!check\-Depl@{check\-Depl}}
+\index{check\-Depl@{check\-Depl}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Depl}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::check\-Depl} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{dep, }
+\item[{{\bf \-Coord} \&}]{arr}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a7b3a14c992f101937d146867fd99f59d}
+\index{\-Echiquier@{\-Echiquier}!check\-Echec@{check\-Echec}}
+\index{check\-Echec@{check\-Echec}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Echec}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::check\-Echec} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a9fd44391766bcb2596bc6586d7b41ce8}
+\index{\-Echiquier@{\-Echiquier}!check\-Echec\-Adv@{check\-Echec\-Adv}}
+\index{check\-Echec\-Adv@{check\-Echec\-Adv}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Echec\-Adv}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Echiquier\-::check\-Echec\-Adv} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a414cd13c24bb497094b493c1fadcaa48}
+\index{\-Echiquier@{\-Echiquier}!check\-Echec\-Mvt@{check\-Echec\-Mvt}}
+\index{check\-Echec\-Mvt@{check\-Echec\-Mvt}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Echec\-Mvt}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::check\-Echec\-Mvt} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_acabfc5248f47843a20181e0ed45614d5}
+\index{\-Echiquier@{\-Echiquier}!check\-Promotion@{check\-Promotion}}
+\index{check\-Promotion@{check\-Promotion}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Promotion}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::check\-Promotion} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos\-Arr}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_aa1973ee789551c538bdb78b059d26f63}
+\index{\-Echiquier@{\-Echiquier}!check\-Roque@{check\-Roque}}
+\index{check\-Roque@{check\-Roque}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Roque}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::check\-Roque} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{dep, }
+\item[{{\bf \-Coord} \&}]{arr, }
+\item[{unsigned int \&}]{x\-Tour}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_afdacd3ae8ac72268682cd42804c0cc5e}
+\index{\-Echiquier@{\-Echiquier}!check\-Sortie\-Echec@{check\-Sortie\-Echec}}
+\index{check\-Sortie\-Echec@{check\-Sortie\-Echec}!Echiquier@{\-Echiquier}}
+\subsubsection[{check\-Sortie\-Echec}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Echiquier\-::check\-Sortie\-Echec} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{dep, }
+\item[{{\bf \-Coord} \&}]{arr, }
+\item[{unsigned int}]{joueur}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a998b64eec455fcd4b791ffcc237b96d2}
+\index{\-Echiquier@{\-Echiquier}!depl\-Piece@{depl\-Piece}}
+\index{depl\-Piece@{depl\-Piece}!Echiquier@{\-Echiquier}}
+\subsubsection[{depl\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::depl\-Piece} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{dep, }
+\item[{{\bf \-Coord} \&}]{arr, }
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a64d388562ba2e4d68c5d0ce61bea8487}
+\-Cas du roi d'un des joueurs en situation d'échec (seuls les déplacements le faisant sortir de sa position d'échec sont autorisés)
+
+\-Cas case d'arrivée vide
+
+\-Cas spécial de la prise en passant \-: le déplacement est possible dans ce cas \-Si la pièce a déplacer est un pion et effectue un déplacement de prise de pièce
+
+\-Cas spécial du roque \-: on regarde si la pièce est un roi et si il est bougé de deux cases, puis \-:
+\begin{DoxyItemize}
+\item si la tour est a proximité
+\item si aucune pièce joueur n'est sur la trajectoire
+\item si le roi et la tour sont a leur position initiale
+\item si aucune pièce adverse ne peut atteindre les cases entre la tour et le roi (incluant les positions du roi et de la tour) (\-Voir check\-Roque)
+\end{DoxyItemize}
+
+\-Cas spécial du roi \-: on regarde si le mouvement demandé le met en échec en testant la position finale du roi. \-Si oui, le mouvement est impossible
+
+\-Le mouvement du roi est effectif, il n'est plus a sa position initiale (cas du roque)
+
+\-Si la pièce n'est pas un roi, on regarde si le mouvement de celle ci met le roi en échec
+
+\-Cas du premier déplacement d'un pion (m\-\_\-first\-\_\-move est mis à false si autre type de déplacement)
+
+\-Cas du mouvement d'une tour \-: m\-\_\-pos\-\_\-init est a faux
+
+\-Cas de la promotion (le déplacement est effectué, on affiche les onglets de choix de promotion)
+
+\-Si on est pas dans le cas d'une prise en passant
+
+\-Si cas d'une prise en passant
+
+\-Case d'arrivée non vide
+
+\-Cas spécial du roi de l'adversaire \-: la pièce est imprenable \-Le mouvement est donc invalide
+
+\-Cas spécial du roi du joueur \-: on regarde si le mouvement demandé le met en échec en testant la position finale du roi. \-Si oui, le mouvement est impossible
+
+\-Le mouvement du roi est effectif, il n'est plus a sa position initiale (cas du roque)
+
+\-Si la pièce n'est pas un roi, on regarde si le mouvement de celle ci met le roi en échec ou si on vise le roi de l'adversaire
+
+\-Si il s'agit d'une prise de piece par un pion, m\-\_\-first\-\_\-pos est a faux
+
+\-Si il s'agit d'une prise de piece par une tour, m\-\_\-pos\-\_\-init est a faux
+
+\-Cas de la promotion (le déplacement est effectué, on affiche les onglets de choix de promotion) 
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echiquier_a64d388562ba2e4d68c5d0ce61bea8487_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Echiquier@{\-Echiquier}!get\-Echec\-Mat@{get\-Echec\-Mat}}
+\index{get\-Echec\-Mat@{get\-Echec\-Mat}!Echiquier@{\-Echiquier}}
+\subsubsection[{get\-Echec\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::get\-Echec\-Mat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a33fe3235633feafa9de2b1d937a61519}
+\index{\-Echiquier@{\-Echiquier}!get\-Echec\-Mat\-Txt@{get\-Echec\-Mat\-Txt}}
+\index{get\-Echec\-Mat\-Txt@{get\-Echec\-Mat\-Txt}!Echiquier@{\-Echiquier}}
+\subsubsection[{get\-Echec\-Mat\-Txt}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Echiquier\-::get\-Echec\-Mat\-Txt} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a3e1fa0451f370393c7107536fd223ce5}
+\index{\-Echiquier@{\-Echiquier}!get\-Pos\-Ech@{get\-Pos\-Ech}}
+\index{get\-Pos\-Ech@{get\-Pos\-Ech}!Echiquier@{\-Echiquier}}
+\subsubsection[{get\-Pos\-Ech}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Echiquier\-::get\-Pos\-Ech} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a2f3ed60ccfcc4f4885b3669740d97636}
+\index{\-Echiquier@{\-Echiquier}!get\-Promotion\-Pion@{get\-Promotion\-Pion}}
+\index{get\-Promotion\-Pion@{get\-Promotion\-Pion}!Echiquier@{\-Echiquier}}
+\subsubsection[{get\-Promotion\-Pion}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::get\-Promotion\-Pion} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_ab4dd4bef497675ffe43ef3a3d66a5849}
+\index{\-Echiquier@{\-Echiquier}!get\-Size\-Res@{get\-Size\-Res}}
+\index{get\-Size\-Res@{get\-Size\-Res}!Echiquier@{\-Echiquier}}
+\subsubsection[{get\-Size\-Res}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Echiquier\-::get\-Size\-Res} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{joueur}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a13bf3ca03eb99acf885c14389fc76cd9}
+\index{\-Echiquier@{\-Echiquier}!get\-Texture@{get\-Texture}}
+\index{get\-Texture@{get\-Texture}!Echiquier@{\-Echiquier}}
+\subsubsection[{get\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}irr\-::video\-::\-I\-Texture $\ast$ {\bf \-Echiquier\-::get\-Texture} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a0ef58bb75d61d82510d37323f677f39f}
+\index{\-Echiquier@{\-Echiquier}!init@{init}}
+\index{init@{init}!Echiquier@{\-Echiquier}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::init} (
+\begin{DoxyParamCaption}
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a55df2453e3067a3f3f91a9eacbc889de}
+\index{\-Echiquier@{\-Echiquier}!lock@{lock}}
+\index{lock@{lock}!Echiquier@{\-Echiquier}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::lock} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{dep, }
+\item[{{\bf \-Coord} \&}]{arr, }
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a76cfb6b0a8335ca7f88f168bca78bcd4}
+\index{\-Echiquier@{\-Echiquier}!raz\-Promoted\-Pion@{raz\-Promoted\-Pion}}
+\index{raz\-Promoted\-Pion@{raz\-Promoted\-Pion}!Echiquier@{\-Echiquier}}
+\subsubsection[{raz\-Promoted\-Pion}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::raz\-Promoted\-Pion} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a9f7de7f4aa975424036674fef3af3fec}
+\index{\-Echiquier@{\-Echiquier}!raz\-Promotion\-Pion@{raz\-Promotion\-Pion}}
+\index{raz\-Promotion\-Pion@{raz\-Promotion\-Pion}!Echiquier@{\-Echiquier}}
+\subsubsection[{raz\-Promotion\-Pion}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::raz\-Promotion\-Pion} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a6828c53246a026366da304244a1f152e}
+\index{\-Echiquier@{\-Echiquier}!rev\-Piece@{rev\-Piece}}
+\index{rev\-Piece@{rev\-Piece}!Echiquier@{\-Echiquier}}
+\subsubsection[{rev\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Echiquier\-::rev\-Piece} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{adv, }
+\item[{{\bf \-Coord} \&}]{pos\-Prec, }
+\item[{{\bf \-Coord} \&}]{pos\-Act}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a883d096ebd8ba39fc08d50404d3c5a93}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echiquier_a883d096ebd8ba39fc08d50404d3c5a93_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Echiquier@{\-Echiquier}!sauver\-Partie@{sauver\-Partie}}
+\index{sauver\-Partie@{sauver\-Partie}!Echiquier@{\-Echiquier}}
+\subsubsection[{sauver\-Partie}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::sauver\-Partie} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{file}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a444cf305784b2636f7495308a03f41b9}
+\index{\-Echiquier@{\-Echiquier}!set\-Selected\-Piece@{set\-Selected\-Piece}}
+\index{set\-Selected\-Piece@{set\-Selected\-Piece}!Echiquier@{\-Echiquier}}
+\subsubsection[{set\-Selected\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::set\-Selected\-Piece} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_abe94e9cfd0bdd813c13c068b2dbac72d}
+\index{\-Echiquier@{\-Echiquier}!set\-Standard\-Piece@{set\-Standard\-Piece}}
+\index{set\-Standard\-Piece@{set\-Standard\-Piece}!Echiquier@{\-Echiquier}}
+\subsubsection[{set\-Standard\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::set\-Standard\-Piece} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{pos}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a52bd3a6156d01b17d149b701342edfa6}
+\index{\-Echiquier@{\-Echiquier}!suppr\-Piece@{suppr\-Piece}}
+\index{suppr\-Piece@{suppr\-Piece}!Echiquier@{\-Echiquier}}
+\subsubsection[{suppr\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::suppr\-Piece} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Coord} \&}]{p}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_a8e81e36f4b020649d834324e4a00e88b}
+\index{\-Echiquier@{\-Echiquier}!upgrade\-Pion@{upgrade\-Pion}}
+\index{upgrade\-Pion@{upgrade\-Pion}!Echiquier@{\-Echiquier}}
+\subsubsection[{upgrade\-Pion}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::upgrade\-Pion} (
+\begin{DoxyParamCaption}
+\item[{char}]{type, }
+\item[{irr\-::video\-::\-I\-Video\-Driver $\ast$}]{driver}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_adf20ab9d7b647668b1b19d9725d11d15}
+
+
+\-Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_echiquier_adf20ab9d7b647668b1b19d9725d11d15_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{\-Echiquier@{\-Echiquier}!verifier\-Echec@{verifier\-Echec}}
+\index{verifier\-Echec@{verifier\-Echec}!Echiquier@{\-Echiquier}}
+\subsubsection[{verifier\-Echec}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Echiquier\-::verifier\-Echec} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{adv}
+\end{DoxyParamCaption}
+)}\label{class_echiquier_ada286a1555f6beef5905d76487ce0130}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf \-Echiquier.\-h}\item 
+{\bf \-Echiquier.\-cpp}\end{DoxyCompactItemize}

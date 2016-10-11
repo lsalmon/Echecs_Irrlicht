@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_pion.html#adbd2c653dddfb1e0079461f38ed53a25" title="Pion::setFirstMove" alt="" coords="252,5,407,38"/>
+<area shape="rect" id="node5" href="$class_piece.html#a4e76c9d4b84a7b55796ad0c66a061361" title="Piece::setIrrlichtPos" alt="" coords="248,61,411,94"/>
+<area shape="rect" id="node7" href="$class_tour.html#a6b04637814b18399d1b0223695b6e017" title="Tour::setPosInit" alt="" coords="263,117,396,150"/>
+<area shape="rect" id="node9" href="$class_roi.html#a35e9c97274c7547b13797ea09aed0222" title="Roi::setPosInit" alt="" coords="267,173,392,206"/>
+</map>
