@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_cavalier.html" title="{Cavalier\n||+ Cavalier()\l+ checkPos()\l}" alt="" coords="5,494,120,613"/>
-<area shape="rect" id="node5" href="$class_fou.html" title="{Fou\n||+ Fou()\l+ checkPos()\l}" alt="" coords="144,494,259,613"/>
-<area shape="rect" id="node9" href="$class_pion.html" title="{Pion\n||+ Pion()\l+ checkPos()\l+ getFirstMove()\l+ setFirstMove()\l}" alt="" coords="283,473,419,634"/>
-<area shape="rect" id="node11" href="$class_roi.html" title="{Roi\n||+ Roi()\l+ checkPos()\l+ getPosInit()\l+ setPosInit()\l}" alt="" coords="443,473,557,634"/>
-<area shape="rect" id="node13" href="$class_tour.html" title="{Tour\n||+ Tour()\l+ checkPos()\l+ getPosInit()\l+ setPosInit()\l}" alt="" coords="581,473,696,634"/>
-<area shape="rect" id="node7" href="$class_dame.html" title="{Dame\n||+ Dame()\l+ checkPos()\l}" alt="" coords="363,683,477,802"/>
-</map>

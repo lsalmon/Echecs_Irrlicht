@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_context_manager.html#aa5ce3d6d28aa2d793556630226f0c01f" title="ContextManager::getReceiver" alt="" coords="133,5,368,38"/>
-<area shape="rect" id="node5" href="$class_context_manager.html#a9f7c406e2c1ea9484b18dad9718fa8d2" title="ContextManager::init" alt="" coords="167,61,335,94"/>
-<area shape="rect" id="node7" href="$class_context_manager.html#ac4632ca9cbd00daa07ed65e77f948655" title="ContextManager::afficher" alt="" coords="151,117,351,150"/>
-<area shape="rect" id="node9" href="$class_context_manager.html#af62b22651767742ee0e4d01d7b96178b" title="ContextManager::timerManagement" alt="" coords="113,173,388,206"/>
-<area shape="rect" id="node11" href="$class_context_manager.html#ad109b08b56a566acf1e99de006d4694a" title="ContextManager::MAJTemps" alt="" coords="136,229,365,262"/>
-<area shape="rect" id="node13" href="$class_context_manager.html#aea30c8e29108cb56c2917c8e4e1f77a9" title="ContextManager::processPosition" alt="" coords="120,285,381,318"/>
-<area shape="rect" id="node15" href="$class_context_manager.html#a7d32e67809b05b796782aea5c1fa6c47" title="ContextManager::MAJScore" alt="" coords="140,341,361,374"/>
-</map>

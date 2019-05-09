@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$_context_manager_8h.html" title="ContextManager.h" alt="" coords="5,254,157,287"/>
-<area shape="rect" id="node9" href="$_piece_8h.html" title="Piece.h" alt="" coords="301,89,376,122"/>
-<area shape="rect" id="node11" href="$_echiquier_8h.html" title="Echiquier.h" alt="" coords="200,171,301,205"/>
-<area shape="rect" id="node19" href="$_piece_8cpp.html" title="Piece.cpp" alt="" coords="477,171,571,205"/>
-<area shape="rect" id="node5" href="$_context_manager_8cpp.html" title="ContextManager.cpp" alt="" coords="304,337,475,370"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title="main.cpp" alt="" coords="117,337,203,370"/>
-<area shape="rect" id="node15" href="$_echiquier_8cpp.html" title="Echiquier.cpp" alt="" coords="181,254,301,287"/>
-</map>

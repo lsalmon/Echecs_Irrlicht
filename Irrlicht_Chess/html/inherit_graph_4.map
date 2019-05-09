@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$class_piece.html" title="Piece" alt="" coords="7,117,68,150"/>
-<area shape="rect" id="node3" href="$class_cavalier.html" title="Cavalier" alt="" coords="117,5,200,38"/>
-<area shape="rect" id="node5" href="$class_fou.html" title="Fou" alt="" coords="133,61,184,94"/>
-<area shape="rect" id="node9" href="$class_pion.html" title="Pion" alt="" coords="132,117,185,150"/>
-<area shape="rect" id="node11" href="$class_roi.html" title="Roi" alt="" coords="136,173,181,206"/>
-<area shape="rect" id="node13" href="$class_tour.html" title="Tour" alt="" coords="132,229,185,262"/>
-<area shape="rect" id="node7" href="$class_dame.html" title="Dame" alt="" coords="249,145,313,178"/>
-</map>
